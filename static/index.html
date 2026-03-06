@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApprovIQ - 3 Tier Leave Approval</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>ApprovIQ</h1>
+      <p>3-tier leave approval workflow: Advisor → HOD → Principal</p>
+
+      <section class="card">
+        <h2>Submit Leave Request</h2>
+        <form id="leaveForm">
+          <input name="student_name" placeholder="Student name" required />
+          <input name="reason" placeholder="Reason" required />
+          <div class="row">
+            <input name="from_date" type="date" required />
+            <input name="to_date" type="date" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Leave Requests</h2>
+        <div id="requests"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
